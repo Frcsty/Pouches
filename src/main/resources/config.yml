@@ -1,0 +1,106 @@
+
+messages:
+  reload-plugin: '&8[&e&l!&8] &7The plugin has been reloaded in &6{time}ms&7.' # {time}
+  invalid-pouch: '&8[&e&l!&8] &cPouch &7{type} &cis not of valid type!' # {type}
+  invalid-target: '&8[&e&l!&8] &cSpecified player does not exist!'
+  offline-target: '&8[&e&l!&8] &cUser &7{target-name} &cis offline.' # {target-name}
+  target-full-inventory: '&8[&e&l!&8] &eTvoj inventorij je poln. Mošnja bo vržena na tla.'
+  target-receive-pouch: '&8[&e&l!&8] &ePrejel si mošnjo z denarjem' # {amount}, {type}
+
+pouches:
+  M1:
+    item:
+      material: ENDER_CHEST
+      display: '&8>[&fI&8]-   &bMoney Pouch   &8-[&fI&8]<'
+      lore:
+        - ""
+        - " &f&l* &7Vsebuje&8: &f$7'000 &8- &f$12'000"
+        - " &f&l* &7Klikni me da odpres mošnjo"
+        - ""
+      glow: false
+    range: '7000;12000'
+    open-actions:
+      - '[message] &8[&fPouches&8] &7Odprl si mošnjo in prejel &f${amount}&7.'
+      - '[console] eco give %player_name% {amount}'
+      - '[title] 2 10 2;&a&l+${amount}:$empty'
+      - '[firework] 1 2 0,255,0 true'
+  M2:
+    item:
+      material: ENDER_CHEST
+      display: '&8>[&fII&8]-   &bMoney Pouch   &8-[&fII&8]<'
+      lore:
+        - ""
+        - " &f&l* &7Vsebuje&8: &f$15'000 &8- &f$25'000"
+        - " &f&l* &7Klikni me da odpres mošnjo"
+        - ""
+      glow: false
+    range: '15000;25000'
+    open-actions:
+      - '[message] &8[&fPouches&8] &7Odprl si mošnjo in prejel &f${amount}&7.'
+      - '[console] eco give %player_name% {amount}'
+      - '[title] 2 10 2;&a&l+${amount}:$empty'
+      - '[firework] 1 2 7,255,7 false'
+  M3:
+    item:
+      material: ENDER_CHEST
+      display: '&8>[&fIII&8]-   &bMoney Pouch   &8-[&fIII&8]<'
+      lore:
+        - ""
+        - " &f&l* &7Vsebuje&8: &f$40'000 &8- &f$60'000"
+        - " &f&l* &7Klikni me da odpres mošnjo"
+        - ""
+      glow: false
+    range: '40000;60000'
+    open-actions:
+      - '[message] &8[&fPouches&8] &7Odprl si mošnjo in prejel &f${amount}&7.'
+      - '[console] eco give %player_name% {amount}'
+      - '[title] 2 10 2;&a&l+${amount}:$empty'
+      - '[firework] 1 2 7,255,7 false'
+  M4:
+    item:
+      material: ENDER_CHEST
+      display: '&8>[&fIV&8]-   &bMoney Pouch   &8-[&fIV&8]<'
+      lore:
+        - ""
+        - " &f&l* &7Vsebuje&8: &f$80'000 &8- &f$120'000"
+        - " &f&l* &7Klikni me da odpres mošnjo"
+        - ""
+      glow: false
+    range: '80000;120000'
+    open-actions:
+      - '[message] &8[&fPouches&8] &7Odprl si mošnjo in prejel &f${amount}&7.'
+      - '[console] eco give %player_name% {amount}'
+      - '[title] 2 10 2;&a&l+${amount}:$empty'
+      - '[firework] 1 2 7,255,7 false'
+  M5:
+    item:
+      material: ENDER_CHEST
+      display: '&8>[&fV&8]-   &bMoney Pouch   &8-[&fV&8]<'
+      lore:
+        - ""
+        - " &f&l* &7Vsebuje&8: &f$300'000 &8- &f$500'000"
+        - " &f&l* &7Klikni me da odpres mošnjo"
+        - ""
+      glow: false
+    range: '300000;500000'
+    open-actions:
+      - '[message] &8[&fPouches&8] &7Odprl si mošnjo in prejel &f${amount}&7.'
+      - '[console] eco give %player_name% {amount}'
+      - '[title] 2 10 2;&a&l+${amount}:$empty'
+      - '[firework] 1 2 7,255,7 false'
+  reactpouch:
+    item:
+      material: ENDER_CHEST
+      display: '&8>[&fReact&8]- &bMoney Pouch &8-[&fReact&8]<'
+      lore:
+        - ""
+        - " &f&l* &7Vsebuje&8: &f$0 &8- &f$2'000"
+        - " &f&l* &7Klikni me da odpres mošnjo"
+        - ""
+      glow: false
+    range: '1;2000'
+    open-actions:
+      - '[message] &8[&fPouches&8] &7Odprl si mošnjo in prejel &f${amount}&7.'
+      - '[console] eco give %player_name% {amount}'
+      - '[title] 2 10 2;&a&l+${amount}:$empty'
+      - '[firework] 1 2 7,255,7 false'

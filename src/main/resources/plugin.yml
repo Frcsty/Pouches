@@ -1,0 +1,20 @@
+name: Pouches
+version: ${project.version}
+main: com.github.frcsty.pouches.Pouches
+author: Frcsty
+softdepend: ["PlaceholderAPI"]
+api-version: 1.13
+
+commands:
+  frozenpouch:
+    description: Base plugin command, used as reload
+    permission: pouches.commands.<command>
+
+permissions:
+  pouches.commands.reload:
+    description: Grants access to reload command (/frozenpouches)
+    default: op
+  pouches.commands.give:
+    description: Grants access to give command (/frozenpouches give <pouch> <target> <amount>)
+    default: op
+
